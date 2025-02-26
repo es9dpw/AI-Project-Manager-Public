@@ -1,10 +1,12 @@
+#This is a version of the system which does not contain an API key, replace the placeholder_key with an actual API key for proper functionality
+
 import os
 import google.generativeai as genai
 import json
 from pydantic import BaseModel, TypeAdapter
 from tkinter import *
 
-genai.configure(api_key="placeholder_key")
+genai.configure(api_key="placeholder_key") #replace placeholder_key with your real API key here
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 def AIprompt(task, weeks, groupSize):
